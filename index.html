@@ -8,18 +8,30 @@
   <title>Tic-Tac-Toe_Game</title>
 </head>
 <body>
+  <h1 class="heading">
+    <strong><span id="red">Tic</span> 
+      <span id="yellow">Tac</span> 
+      <span id="green">Toe</span></strong>
+  </h1>
   <div class="gameboard">
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
+    <div class="cell" data-grid index="0"></div>
+    <div class="cell" data-grid index="1"></div>
+    <div class="cell" data-grid index="2"></div>
+    <div class="cell" data-grid index="3"></div>
+    <div class="cell" data-grid index="4"></div>
+    <div class="cell" data-grid index="5"></div>
+    <div class="cell" data-grid index="6"></div>
+    <div class="cell" data-grid index="7"></div>
+    <div class="cell" data-grid index="8"></div>
+  </div>
+  <div class="turn-text">
   </div>
 
+  <div class="winning-box">
+    <p class="winning-text"></p>
+    <button type="restart" id="restart">Restart</button>
+  </div>
 
+  <script src="index.js"></script>
 </body>
 </html>

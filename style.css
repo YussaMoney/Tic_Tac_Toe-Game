@@ -7,6 +7,24 @@
 body {
   background: linear-gradient(to left, rgb(255, 102, 0), rgb(0, 255, 191));
   font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.heading {
+  text-align: center;
+  font-size: 5rem;  
+}
+
+#red {
+  color: red;
+}
+
+#yellow {
+  color: yellow;
+}
+
+#green {
+  color: green;
 }
 
 .gameboard {
@@ -15,6 +33,8 @@ body {
   align-content: center;
   height: 100vh;
   grid-template-columns: repeat(3, auto);
+  font-style: italic;
+  margin-top: -6rem;
 }
 
 .cell {
@@ -26,6 +46,9 @@ body {
   justify-content: center;
   border-left: 0;
   border-bottom: 0;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 6rem;
 }
 
 .cell:last-child,
@@ -38,4 +61,51 @@ body {
 .cell:nth-child(2),
 .cell:nth-child(3) {
   border-top: 0;
+}
+
+.turn-text {
+  font-size: 3rem;
+  font-weight: bolder;
+  font-family: Impact, Haettenschweiler, 
+  'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  margin-top: -7rem;
+}
+
+.winning-box {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.winning-box.appear {
+  display: flex;
+}
+
+.winning-text {
+  font-size: 4rem;
+  font-weight: bolder;
+  color: white;
+}
+
+#restart {
+  cursor: pointer;
+  display: block;
+  font-size: 3rem;
+  padding: 0.5rem 1.3rem;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+#restart:hover {
+  color: white;
+  background-color: black;
+  border: 1px solid white;
 }
