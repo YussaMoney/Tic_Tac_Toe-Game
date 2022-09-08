@@ -13,6 +13,7 @@ body {
 .heading {
   text-align: center;
   font-size: 5rem;
+  margin-bottom: 3rem;
 }
 
 #red {
@@ -31,10 +32,9 @@ body {
   display: grid;
   justify-content: center;
   align-content: center;
-  height: 100vh;
+  height: 100%;
   grid-template-columns: repeat(3, auto);
   font-style: italic;
-  margin-top: -6rem;
 }
 
 .cell {
@@ -72,7 +72,7 @@ body {
     'Arial Narrow Bold',
     sans-serif;
   text-align: center;
-  margin-top: -7rem;
+  margin-top: 3rem;
 }
 
 .winning-box {
