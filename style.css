@@ -112,3 +112,61 @@ body {
   background-color: black;
   border: 1px solid white;
 }
+
+@media only screen
+  and (min-width: 479px)
+  and (max-width: 780px) {
+
+    .cell {
+      width: 6rem;
+      height: 6rem;
+      border: 3px solid black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-left: 0;
+      border-bottom: 0;
+      cursor: pointer;
+      font-weight: bolder;
+      font-size: 5rem;
+    }
+
+    .heading {
+      font-size: 4.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .turn-text {
+      margin-top: 2.5rem;
+    }
+
+}
+
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 480px) {
+    
+    .cell {
+      width: 5rem;
+      height: 5rem;
+      border: 3px solid black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-left: 0;
+      border-bottom: 0;
+      cursor: pointer;
+      font-weight: bolder;
+      font-size: 4rem;
+    }
+
+    .heading {
+      font-size: 3rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .turn-text {
+      margin-top: 1rem;
+    }
+
+}
