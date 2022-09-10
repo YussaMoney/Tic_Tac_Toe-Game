@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to left, rgb(255, 102, 0), rgb(0, 255, 191));
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.heading {
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 3rem;
+}
+
+#red {
+  color: red;
+}
+
+#yellow {
+  color: yellow;
+}
+
+#green {
+  color: green;
+}
+
+.gameboard {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+  grid-template-columns: repeat(3, auto);
+  font-style: italic;
+}
+
+.cell {
+  width: 7rem;
+  height: 7rem;
+  border: 3px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 0;
+  border-bottom: 0;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 6rem;
+}
+
+.cell:last-child,
+.cell:nth-child(3),
+.cell:nth-child(6) {
+  border-right: 0;
+}
+
+.cell:first-child,
+.cell:nth-child(2),
+.cell:nth-child(3) {
+  border-top: 0;
+}
+
+.turn-text {
+  font-size: 3rem;
+  font-weight: bolder;
+  font-family:
+    Impact,
+    Haettenschweiler,
+    'Arial Narrow Bold',
+    sans-serif;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.winning-box {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.winning-box.appear {
+  display: flex;
+}
+
+.winning-text {
+  font-size: 4rem;
+  font-weight: bolder;
+  color: white;
+}
+
+#restart {
+  cursor: pointer;
+  display: block;
+  font-size: 3rem;
+  padding: 0.5rem 1.3rem;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+#restart:hover {
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+}
+
+@media only screen
+  and (min-width: 479px)
+  and (max-width: 780px) {
+  .cell {
+    width: 6rem;
+    height: 6rem;
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 0;
+    border-bottom: 0;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 5rem;
+  }
+
+  .heading {
+    font-size: 4.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .turn-text {
+    margin-top: 2.5rem;
+  }
+}
+
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 480px) {
+  .cell {
+    width: 5rem;
+    height: 5rem;
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 0;
+    border-bottom: 0;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 4rem;
+  }
+
+  .heading {
+    font-size: 3rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .turn-text {
+    margin-top: 1rem;
+  }
+}
