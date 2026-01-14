@@ -8,6 +8,10 @@ body {
   background: linear-gradient(to left, rgb(255, 102, 0), rgb(0, 255, 191));
   font-size: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .heading {
